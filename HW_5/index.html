@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="location">
+                    <span class="country"></span>
+                    <span class="city"></span>
+                </div>
+                <div class="time-data">
+                    <span class="day"></span>
+                    <span class="time"></span>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main-container">
+                <section class="main-content">
+                    <div class="icon-location">
+                    </div>
+                    <div class="weather-info">
+                        <span class="temp-min"></span>
+                        <span class="temp-max"></span>
+                        <p class="description"></p>
+                    </div>
+                </section>
+                <section class="extra-content">
+                    <div>
+                        <span class="main-heading">Main</span>
+                    </div>
+                    <div class="extra-info">
+                        <div class="info-item">
+                            <span class="item-name">Pressure</span>
+                            <span class="pressure"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="item-name">Visibility</span>
+                            <span class="visibility"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="item-name">Humidity</span>
+                            <span class="humidity"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="item-name">Feels like</span>
+                            <span class="feelings"></span>
+                        </div>
+                    </div>
+                </section>
+                <section class="extra-content">
+                    <div>
+                        <span class="main-heading">Wind</span>
+                    </div>
+                    <div class="extra-info">
+                        <div class="info-item">
+                            <span class="item-name">Speed</span>
+                            <span class="speed"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="item-name">Deg</span>
+                            <span class="deg"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="item-name">Gust</span>
+                            <span class="gust"></span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <header></header>
+    </div>
+    <script src="https://kit.fontawesome.com/890b1e6f40.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
