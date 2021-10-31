@@ -42,18 +42,19 @@ $(document).ready(function () {
                             'appid': appid
                         },
                         function (data) {
-                            console.log(data)
+                            const MAIN = data.main;
+                            const WIND = data.wind;
                             iconLocation.innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png">`;
-                            tempMin.innerHTML = `${toCelsius(data.main.temp_min)}/`;
-                            tempMax.innerHTML = `${toCelsius(data.main.temp_max)}`;
+                            tempMin.innerHTML = `${toCelsius(MAIN.temp_min)}/`;
+                            tempMax.innerHTML = `${toCelsius(MAIN.temp_max)}`;
                             description.innerHTML = data.weather[0].description;
-                            pressure.innerHTML = `${data.main.pressure}mp`;
+                            pressure.innerHTML = `${MAIN.pressure}mp`;
                             visibility.innerHTML = `${data.visibility / 1000}km`;
-                            humidity.innerHTML = `${data.main.humidity}%`;
-                            speed.innerHTML = `${data.wind.speed}mps`;
-                            deg.innerHTML = `${data.wind.deg}&#176;`;
-                            gust.innerHTML = `${data.wind.gust}mps`;
-                            feelings.innerHTML = `${toCelsius(data.main.feels_like)}`;
+                            humidity.innerHTML = `${MAIN.humidity}%`;
+                            speed.innerHTML = `${WIND.speed}mps`;
+                            deg.innerHTML = `${WIND.deg}&#176;`;
+                            gust.innerHTML = `${WIND.gust}mps`;
+                            feelings.innerHTML = `${toCelsius(MAIN.feels_like)}`;
                         }
                     )
                 }
