@@ -1,16 +1,16 @@
-import WeatherModule from './weatherModule.js';
 import WeatherView from './weatherView.js';
+import WeatherModel from './weatherModel.js';
 
 export default class WeatherController {
     constructor() {
         this.view = new WeatherView();
-        this.module = new WeatherModule();
+        this.model = new WeatherModel();
     }
 
     async init() {
-        const data = await this.module.getWeather();
-        const locationData = await this.module.getLocation();
-        const dateInfo = this.module.getDateInfo();
+        const data = await this.model.getWeather();
+        const locationData = await this.model.getLocation();
+        const dateInfo = this.model.getDateInfo();
         this.view.render(data, locationData, dateInfo);
     }
 }

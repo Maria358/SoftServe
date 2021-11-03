@@ -1,4 +1,4 @@
-export default class WeatherModule {
+export default class WeatherModel {
     weatherId = '66285dfd0cb8c73411dc50d09d160bc6';
     locationKey = 'dfde8c55bfb3450aa449e65d86aa6a80';
     geoAPI = 'https://api.ipgeolocation.io/ipgeo';

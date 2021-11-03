@@ -23,7 +23,7 @@
 // getDay();
 // setInterval(getTime, 1000);
 
-// module
+// model
 // $(document).ready(function () {
 //     $.get(
 //         `https://api.ipgeolocation.io/getip`, {},
@@ -40,7 +40,7 @@
 //                     // country.innerHTML = `${data.country_name}, `;
 //                     // city.innerHTML = data.city;
 
-//                     // module
+//                     // model
 //                     $.get(
 //                         `http://api.openweathermap.org/data/2.5/weather?`,
 //                         {
@@ -48,7 +48,7 @@
 //                             'lon': data.longitude,
 //                             'appid': appid
 //                         },
-//                         // module
+//                         // model
 //                         function (data) {
 //                             // view
 //                             // const MAIN = data.main;
@@ -72,7 +72,7 @@
 //     )
 
 // })
-// module
+//model
 // function getDay() {
     // module
     // const now = new Date();
@@ -89,7 +89,7 @@
 
     // day.innerHTML = `${days[now.getDay()]}, `;
 // }
-// module
+// model
 // function getTime() {
 //     const now = new Date();
 
@@ -99,7 +99,7 @@
 //     // view
 //     // time.textContent = `${hours}:${min}`;
 // }
-// module
+// model
 // function toCelsius(parameter) {
 //     return `${Math.trunc(parameter - 273)}&#176;`;
 // }
