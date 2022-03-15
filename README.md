@@ -1,1 +1,1 @@
-# SoftServe internship homeworks
+# SoftServe internship tasks
